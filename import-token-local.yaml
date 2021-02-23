@@ -1,0 +1,43 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: ClusterRegistrationToken
+metadata:
+  creationTimestamp: "2021-02-14T01:27:30Z"
+  generation: 1
+  managedFields:
+  - apiVersion: fleet.cattle.io/v1alpha1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:ownerReferences:
+          .: {}
+          k:{"uid":"5bdb0314-eb8b-41b6-af74-599a0dcfa772"}:
+            .: {}
+            f:apiVersion: {}
+            f:kind: {}
+            f:name: {}
+            f:uid: {}
+      f:spec:
+        .: {}
+        f:ttl: {}
+      f:status:
+        .: {}
+        f:expires: {}
+        f:secretName: {}
+    manager: fleetcontroller
+    operation: Update
+    time: "2021-02-14T01:27:31Z"
+  name: import-token-local
+  namespace: fleet-local
+  ownerReferences:
+  - apiVersion: fleet.cattle.io/v1alpha1
+    kind: Cluster
+    name: local
+    uid: 5bdb0314-eb8b-41b6-af74-599a0dcfa772
+  resourceVersion: "3323"
+  selfLink: /apis/fleet.cattle.io/v1alpha1/namespaces/fleet-local/clusterregistrationtokens/import-token-local
+  uid: 9a50e17d-2ff7-42e7-87e8-2aff694a9a05
+spec:
+  ttl: 12h0m0s
+status:
+  expires: "2021-02-14T13:27:30Z"
+  secretName: import-token-local
